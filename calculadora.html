@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/calculadora.js"></script>
+</head>
+<body>
+    <header>
+        <button class="typeBase" id="base-triangulo">
+            <img src="icon/triangular.png" alt="">
+            <h3>Base Triangular</h3>
+        </button>
+        <button class="typeBase" id="base-quadrado">
+            <img src="icon/quadrado.png" alt="">
+            <h3>Base Quadrangular</h3>
+        </button>
+        <button class="typeBase" id="base-pentagono">
+            <img src="icon/pentagono.png" alt="">
+            <h3>Base Pentagonal</h3>
+        </button>
+        <button class="typeBase" id="base-hexagono">
+            <img src="icon/hexagono.png" alt="">
+            <h3>Base Hexagonal</h3>
+        </button>
+    </header>
+    <main>
+        <div class="areaSelecione">
+            <h3>Selecione um tipo de pirâmide acima</h3>
+        </div>
+        <div class="areaTypeBase">
+            <div class="piramideDados">
+                <div class="piramideContainer1">
+                    <h4 id="pBase-text">Base do triângulo</h4>
+                    <input class="dadosItem" id="pBase" type="number" placeholder="cm">
+                    <h4 id="pBaseAltura-text">Altura do triângulo</h4>
+                    <input class="dadosItem" id="pBaseAltura" type="number" placeholder="cm">
+                    <h3 id="pLado-text">Lado (L):</h3>
+                    <input class="dadosItem" id="pLado" type="number" placeholder="cm">
+                    <h3 id="pLado2-text">Lado 2 (L):</h3>
+                    <input class="dadosItem" id="pLado2" type="number" placeholder="cm">
+                    <h3>Altura (h)</h3>
+                    <input class="dadosItem" id="pAltura" type="number" placeholder="cm">
+                </div>
+                <div class="piramideContainer2">
+                    <select class="dadosItem pFormula" id="pFormula-quadrangular">
+                        <option value="p1">Base Quadrada</option>
+                        <option value="p2">Base Retangular</option>
+                    </select>
+                    <select class="dadosItem pFormula" id="pFormula-triangular">
+                        <option value="p1">Triângulo Equilátero</option>
+                        <option value="p2">Triângulo não Equilátero</option>
+                    </select>
+                    <button id="pCalcular" class="dadosItem">Calcular</button>
+                </div>
+            </div>
+            <div class="imgContainer">
+                <img class="imgPiramide" id="img-triangulo" src="img/piramidetriangular.png" alt="">
+                <img class="imgPiramide" id="img-quadrado" src="img/piramidedebasequadrada.png" alt="">
+                <img class="imgPiramide" id="img-pentagono" src="img/piramidedebasepentagonal.png" alt="">
+                <img class="imgPiramide" id="img-hexagono" src="img/piramidedebasehexagonal.png" alt="">
+            </div>
+        </div>
+        <div class="resultContainer">
+            <h2 id="result"></h2>
+        </div>
+    </main>
+</body>
+</html>

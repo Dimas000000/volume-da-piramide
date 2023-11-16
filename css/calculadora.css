@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+.typeBase{
+    background-color: rgba(255, 255, 255, 0.07);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+.typeBase:hover{
+    background-color: rgba(0, 0, 0, 0.17);
+}
+.typeBase img{
+    filter: invert();
+}
+.typeBase h3{
+    color: white;
+}
+.btnSelect{
+    background-color: rgba(0, 0, 0, 0.17)
+}
+.areaTypeBase{
+    color: white;
+}
+.piramideContainer1{
+    background-color: rgb(30, 30, 30);
+}
+.piramideContainer2{
+    background-color: rgb(30, 30, 30);
+}
+#pCalcular{
+    background-color: orange;
+}
+#pCalcular:focus{
+    background-color: rgb(177, 115, 0);
+}
+
+@media only screen and (min-width: 0px)
+{
+    header{
+        height: min(7vw, 14vh);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .typeBase{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 24%;
+        height: 80%;
+        border-radius: min(0.4vw, 0.8vh);
+    }
+    .typeBase img{
+        width: min(4vw, 8vh);
+    }
+    .typeBase h3{
+        font-size: min(1.4vw, 2.8vh);
+    }
+    main{
+        display: grid;
+        grid-template: min(15vw, 30vh) 1fr / 1fr;
+        height: 70vh;
+    }
+    .areaSelecione{
+        grid-area: 1/1/1/1;
+        font-size: min(1.5vw, 3vh);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .areaTypeBase{
+        grid-area: 1/1/1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .piramideDados{
+        display: flex;
+    }
+    .piramideContainer1{
+        padding: min(1vw, 2vh);
+        margin: min(0.5vw, 1vh);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: min(1vw, 2vh);
+    }
+    .piramideContainer2{
+        padding: min(1vw, 2vh);
+        margin: min(0.5vw, 1vh);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: min(1vw, 2vh);
+    }
+    .piramideContainer1 h3{
+        font-size: min(2vw, 4vh);
+    }
+    .piramideContainer1 .dadosItem{
+        margin-bottom: min(0.5vw, 1vh);
+    }
+    .dadosItem{
+        width: min(12.5vw, 25vh);
+        border: none;
+        outline: none;
+        padding: min(0.3vw, 0.6vh);
+        font-size: min(1.2vw, 2.4vh);
+        border-radius: min(0.5vw, 1vh);
+    }
+    .imgContainer{
+        background-color: rgb(30, 30, 30);
+        padding: min(0.5vw, 1vh);
+        border-radius: min(1vw, 2vh);
+        margin-left: min(0.5vw, 1vh);
+    }
+    .areaTypeBase img{
+        height: min(13vw, 26vh);
+    }
+    .resultContainer{
+        grid-area: 2/1/2/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: min(1.5vw, 3vh);
+    }
+    #result{
+        width: 70%;
+        text-align: justify;
+    }
+}
