@@ -11,12 +11,13 @@
 }
 ::-webkit-scrollbar-thumb{
     background-color: rgb(50, 50, 50);
+    border-radius: 20vw;
 }
 body{
     color: white;
 }
 header{
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(20, 20, 20);
 }
 #gerar{
     background-color: orange;
@@ -40,11 +41,8 @@ section{
     font-weight: bold;
 }
 
-@media only screen and (min-width: 0px)
+@media only screen and (min-width: 565px)
 {
-    ::-webkit-scrollbar-thumb{
-        border-radius: 20vw;
-    }
     body{
         height: 100vh;
         display: grid;
@@ -95,5 +93,63 @@ section{
         width: 100%;
         font-size: min(1.7vw, 3.4vh);
         border-radius: 0 0 min(1vw, 2vh) min(1vw, 2vh);
+    }
+}
+
+@media only screen and (max-width: 565px)
+{
+    body{
+        height: 100vh;
+        display: grid;
+        grid-template: 20vw 1fr / 1fr;
+    }
+    header{
+        grid-area: 1/1/1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #gerar{
+        width: 60vw;
+        height: 12vw;
+        font-size: 6vw;
+        border-radius: 4vw;
+    }
+    main{
+        grid-area: 2/1/2/1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section{
+        width: 90%;
+        margin: 5vw;
+        border-radius: 3vw;
+        font-size: 5vw;
+    }
+    .title{
+        margin: 3vw;
+    }
+    .content{
+        margin: 3vw;
+        padding: 2vw;
+    }
+    .question{
+        text-align: justify;
+    }
+    .resposta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0 3vw 3vw;
+        padding: 1vw;
+    }
+    .response{
+        font-size: 4.5vw;
+    }
+    .showResponse{
+        width: 100%;
+        font-size: 4.5vw;
+        border-radius: 0 0 3vw 3vw;
     }
 }

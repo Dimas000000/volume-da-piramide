@@ -111,7 +111,7 @@ $(document).ready(()=>{
     $('#pCalcular').click(()=>{
         switch(base_type){
             case 'triangular':
-                $('#result').text(`O Volume da pirâmide com base ${base_type} usando os valores que você forneceu é aproximadamente ${triangulo().toFixed(2)}cm³`);
+                $('#result').text(`O Volume da pirâmide com base ${base_type} usando os valores que você forneceu é aproximadamente ${triangulo().toFixed(2)} cm³`);
             break;
             case 'quadrangular':
                 let quadrangular_type;
@@ -123,13 +123,13 @@ $(document).ready(()=>{
                 {
                     quadrangular_type = 'retangular';
                 }
-                $('#result').text(`O Volume da pirâmide com base ${quadrangular_type} usando os valores que você forneceu é aproximadamente ${quadrado().toFixed(2)}cm³`);
+                $('#result').text(`O Volume da pirâmide com base ${quadrangular_type} usando os valores que você forneceu é aproximadamente ${quadrado().toFixed(2)} cm³`);
            break;
             case 'pentagonal':
-                $('#result').text(`O Volume da pirâmide com base ${base_type} usando os valores que você forneceu é aproximadamente ${pentagono().toFixed(2)}cm³`);
+                $('#result').text(`O Volume da pirâmide com base ${base_type} usando os valores que você forneceu é aproximadamente ${pentagono().toFixed(2)} cm³`);
             break;
             case 'hexagonal':
-                $('#result').text(`O Volume da pirâmide com base ${base_type} usando os valores que você forneceu é aproximadamente ${hexagono().toFixed(2)}cm³`);
+                $('#result').text(`O Volume da pirâmide com base ${base_type} usando os valores que você forneceu é aproximadamente ${hexagono().toFixed(2)} cm³`);
             break;
         }
     });
