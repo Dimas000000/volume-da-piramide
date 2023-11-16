@@ -3,9 +3,15 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+::selection{
+    background-color: orange;
+}
 body{
     background-color: rgb(40, 40, 40);
     color: white;
+}
+header{
+    background-color: rgb(30, 30, 30);
 }
 .typeBase{
     background-color: rgba(255, 255, 255, 0.07);
@@ -37,14 +43,18 @@ body{
 #pCalcular{
     background-color: orange;
 }
-#pCalcular:focus{
+#pCalcular:active{
     background-color: rgb(177, 115, 0);
 }
 
 @media only screen and (min-width: 0px)
 {
+    body{
+        display: grid;
+        grid-template: min(7vw, 14vh) 70vh / 1fr;
+    }
     header{
-        height: min(7vw, 14vh);
+        grid-area: 1/1/1/1;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -64,9 +74,9 @@ body{
         font-size: min(1.4vw, 2.8vh);
     }
     main{
+        grid-area: 2/1/2/1;
         display: grid;
         grid-template: min(15vw, 30vh) 1fr / 1fr;
-        height: 70vh;
     }
     .areaSelecione{
         grid-area: 1/1/1/1;

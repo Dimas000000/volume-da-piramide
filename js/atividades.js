@@ -1,0 +1,11 @@
+$(document).ready(()=>{
+    $('.response').hide();
+    $('section').hover(function(){
+        $(this).find('.response').show();
+        $(this).find('.showResponse').hide();
+    },
+    function(){
+        $(this).find('.response').hide();
+        $(this).find('.showResponse').show();
+    });
+});
